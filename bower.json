@@ -1,0 +1,21 @@
+{
+  "name": "salt",
+  "description": "salt landing page",
+  "main": "index.js",
+  "authors": [
+    "m.martdn@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/21region/salt-website",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "^2.8.1"
+  }
+}
