@@ -1,7 +1,7 @@
 {
-  "name": "frontend-quickstart",
+  "name": "salt",
   "version": "1.0.0",
-  "description": "project of sass and compass",
+  "description": "salt landing page",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martdn/frontend-quickstart.git"
+    "url": "git+https://github.com/martdn/salt-website.git"
   },
   "author": "m.martdn@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/martdn/frontend-quickstart/issues"
+    "url": "https://github.com/martdn/salt-website/issues"
   },
-  "homepage": "https://github.com/martdn/frontend-quickstart#readme"
+  "homepage": "https://github.com/martdn/salt-website#readme"
 }
