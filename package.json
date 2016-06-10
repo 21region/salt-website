@@ -1,0 +1,25 @@
+{
+  "name": "frontend-quickstart",
+  "version": "1.0.0",
+  "description": "project of sass and compass",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "concurrently \"compass watch\" \"npm run lite\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martdn/frontend-quickstart.git"
+  },
+  "author": "m.martdn@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martdn/frontend-quickstart/issues"
+  },
+  "homepage": "https://github.com/martdn/frontend-quickstart#readme"
+}

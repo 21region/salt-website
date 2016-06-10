@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,KAAM,GACJ,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI;;;AAGd,UAAW,GACT,IAAI,ECH0B,OAAO",
+"sources": ["../../assets/scss/components/_icons.scss","../../assets/scss/base/_variables.scss"],
+"names": [],
+"file": "main.css"
+}
