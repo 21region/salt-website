@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 0;
+  transition: .3s;
+}
+
+.btn-default {
+  background: $color-button-default;
+  color: white;
+
+  &:hover {
+    background: none;
+  }
+}
+
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 24px;
+}

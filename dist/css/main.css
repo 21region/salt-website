@@ -1,13 +1,39 @@
+/* line 1, ../../assets/scss/components/_buttons.scss */
+.btn { border-radius: 0; transition: .3s; }
+
+/* line 6, ../../assets/scss/components/_buttons.scss */
+.btn-default { background: #001f43; color: white; }
+/* line 10, ../../assets/scss/components/_buttons.scss */
+.btn-default:hover { background: none; }
+
+/* line 15, ../../assets/scss/components/_buttons.scss */
+.btn-lg { padding: 15px 30px; font-size: 24px; }
+
 /* line 1, ../../assets/scss/components/_typography.scss */
+body { font-family: Verdana, Geneva, sans-serif; font-size: 18px; }
+
+/* line 6, ../../assets/scss/components/_typography.scss */
+h1 { font-size: 48px; font-style: normal; font-variant: normal; font-weight: 500; text-transform: uppercase; letter-spacing: -2px; color: #001f43; }
+
+/* line 16, ../../assets/scss/components/_typography.scss */
+h3 { font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 15.4px; }
+
+/* line 24, ../../assets/scss/components/_typography.scss */
+p { font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
+
+/* line 32, ../../assets/scss/components/_typography.scss */
 a { color: #00428f; }
-/* line 4, ../../assets/scss/components/_typography.scss */
+/* line 35, ../../assets/scss/components/_typography.scss */
 a:hover { color: #001f43; }
 
 /* line 1, ../../assets/scss/components/_icons.scss */
-.icon { width: 25px; height: 25px; }
+.icon-checkmark, .advantages li::before { background: url(../images/icons/svg/checkmark.svg); }
 
-/* line 6, ../../assets/scss/components/_icons.scss */
-.shape-man { fill: #00428f; }
+/* line 5, ../../assets/scss/components/_icons.scss */
+.icon-size-18 { width: 18px; height: 18px; }
+
+/* line 10, ../../assets/scss/components/_icons.scss */
+.icon-size-24, .advantages li::before { width: 24px; height: 24px; background-size: 24px; }
 
 /* line 1, ../../assets/scss/layout/_header.scss */
 .site-logo, .header-logo { display: block; background: url("../images/logo-allsalt.png") no-repeat; }
@@ -26,9 +52,19 @@ a:hover { color: #001f43; }
 .header-contacts .request-call { font-size: 18px; }
 
 /* line 1, ../../assets/scss/containers/_sections.scss */
-.section { background-size: cover; }
+.section { position: relative; background-size: cover; }
 
-/* line 5, ../../assets/scss/containers/_sections.scss */
+/* line 6, ../../assets/scss/containers/_sections.scss */
 #section-0 { background: url("../images/bg-section-0.jpg"); background-size: cover; }
+
+/* line 12, ../../assets/scss/containers/_sections.scss */
+.content h1 { padding-top: 3em; padding-bottom: 4em; }
+
+/* line 18, ../../assets/scss/containers/_sections.scss */
+.advantages { width: 330px; position: absolute; left: 50%; margin-left: -165px; bottom: 5em; }
+/* line 25, ../../assets/scss/containers/_sections.scss */
+.advantages li { position: relative; padding-left: 35px; padding-bottom: 10px; color: #001f43; }
+/* line 31, ../../assets/scss/containers/_sections.scss */
+.advantages li::before { content: ''; display: block; position: absolute; left: 0; }
 
 /*# sourceMappingURL=main.css.map */

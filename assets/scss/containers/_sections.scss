@@ -1,8 +1,40 @@
 .section {
+  position: relative;
   background-size: cover;
 }
 
 #section-0 {
   background: url('../images/bg-section-0.jpg');
   background-size: cover;
+}
+
+.content {
+  h1 {
+    padding-top: 3em;
+    padding-bottom: 4em;
+  }
+}
+
+.advantages {
+  width: 330px;
+  position: absolute;
+  left: 50%;
+  margin-left: -165px;
+  bottom: 5em;
+
+  li {
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 10px;
+    color: $color-blue-dark;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      @extend .icon-checkmark;
+      @extend .icon-size-24;
+    }
+  }
 }
