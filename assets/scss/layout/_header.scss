@@ -27,3 +27,40 @@
   }
 }
 
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  border-bottom: 3px solid $color-blue-dark;
+  transition-duration: .3s;
+  overflow: hidden;
+  z-index: 9999;
+
+  &.show-header {
+    height: 70px;
+  }
+
+  .header-logo {
+    width: 200px;
+    height: 60px;
+    margin-top: 4px;
+    background-size: 65%;
+  }
+
+  .header-contacts {
+    padding-top: 0;
+
+    .phone {
+      font-size: 24px;
+      line-height: 67px;
+    }
+  }
+}
+
+.navigation {
+  display: inline-block;
+  line-height: 67px;
+}
