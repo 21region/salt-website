@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>salt.ru</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="dist/css/main.css">
 </head>
@@ -14,13 +15,13 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Products</a></li>
 				<li><a href="#">Contacts</a></li>
-				<li></li>
 			</nav>
 			<div class="header-contacts pull-right">
 				<div class="phone">+7 800 999 99 00</div>
 			</div>
 		</div>
 	</header>
+	<div class="wrapper">
 	<main id="fullpage" role="main">
 		<div id="section-0" class="section">
 			<div class="container">
@@ -36,7 +37,6 @@
 						<h1>Оптовые продажи пищевой соли</h1>
 						<a href="#" class="button btn btn-default btn-lg">Рассчитать стоимость</a>
 					</div>
-
 					<ul class="advantages list-unstyled">
 						<li>Крупнейшией поставщик</li>
 						<li>Гарантия стабильных поставок</li>
@@ -45,29 +45,100 @@
 				</div>
 			</div>
 		</div>
-		<div class="section">Some section</div>
-		<div class="section">Some section</div>
-		<div class="section">Some section</div>
+
+		<div id="section-1" class="section">
+			<div class="business container-fluid">
+				<div class="heading text-center">
+					<h1>Мы предлагаем</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Praesent pharetra felis sed vestibulum mattis. unc fringilla felis eu tortor posuere, at condimentum nisl molestie.</p>
+				</div>
+				<section class="row">
+					<div class="col-md-6 removed-padding-left-right">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="dist/images/img-salt-1.jpg" alt="">
+							<figcaption>
+								<!--<h4>Tilling</h4>-->
+								<!--<p>In sit amet sapien eros Integer quibusdam et aut officiis debitis aut rerum in tincidunt labore et dolore magna aliqua</p>-->
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-6 business-information removed-padding-left-right">
+						<div class="sp-wid">
+							<h4>We select the highest quality seeds for effective growth of crop</h4>
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere
+								possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+								Temporibus autem quibusdam et aut officiis debitis aut rerum </p>
+						</div>
+					</div>
+				</section>
+				<section class="row">
+					<div class="col-md-6 business-information removed-padding-left-right">
+						<div class="sp-wid">
+							<h4>We select the highest quality seeds for effective growth of crop</h4>
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere
+								possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+								Temporibus autem quibusdam et aut officiis debitis aut rerum </p>
+						</div>
+					</div>
+					<div class="col-md-6 removed-padding-left-right">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="dist/images/img-salt-1.jpg" alt="">
+							<figcaption>
+								<!--<h4>Tilling</h4>-->
+								<!--<p>In sit amet sapien eros Integer quibusdam et aut officiis debitis aut rerum in tincidunt labore et dolore magna aliqua</p>-->
+							</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="row">
+					<div class="col-md-6 removed-padding-left-right">
+						<figure class="effect-bubba">
+							<img class="img-responsive" src="dist/images/img-salt-1.jpg" alt="">
+							<figcaption>
+								<!--<h4>Tilling</h4>-->
+								<!--<p>In sit amet sapien eros Integer quibusdam et aut officiis debitis aut rerum in tincidunt labore et dolore magna aliqua</p>-->
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-6 business-information removed-padding-left-right">
+						<div class="sp-wid">
+							<h4>We select the highest quality seeds for effective growth of crop</h4>
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio
+								cumque nihil impedit quo minus id quod maxime placeat facere
+								possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+								Temporibus autem quibusdam et aut officiis debitis aut rerum </p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="section">Some section 3</div>
+		<div class="section">Some section 4</div>
 	</main>
+	</div>
 	<script src="vendors/jquery/dist/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="vendors/fullpage.js/vendors/scrolloverflow.min.js"></script>
 	<script src="vendors/fullpage.js/dist/jquery.fullpage.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				'verticalCentered': false,
-				navigation: true,
+				scrollOverflow: true,
 				onLeave: function(index, nextIndex, direction){
 					if(nextIndex != 1){
 						$('.header-fixed').addClass('show-header');
+						$('.wrapper').css('padding-top','70px');
 					}
 					else {
 						$('.header-fixed').removeClass('show-header');
+						$('.wrapper').css('padding-top','0');
 					}
 				}
 			});
-
 		});
 	</script>
 </body>
