@@ -1,1 +1,29 @@
-header {}
+.site-logo {
+  display: block;
+  background: url('../images/logo-allsalt.png') no-repeat;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-logo {
+  @extend .site-logo;
+  background-size: 90%;
+  width: 200px;
+  height: 85px;
+}
+
+.header-contacts {
+  padding-top: 10px;
+  text-align: right;
+
+  .phone {
+    font-size: 30px;
+  }
+
+  .request-call {
+    font-size: 18px;
+  }
+}
+

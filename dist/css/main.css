@@ -1,7 +1,34 @@
+/* line 1, ../../assets/scss/components/_typography.scss */
+a { color: #00428f; }
+/* line 4, ../../assets/scss/components/_typography.scss */
+a:hover { color: #001f43; }
+
 /* line 1, ../../assets/scss/components/_icons.scss */
 .icon { width: 25px; height: 25px; }
 
 /* line 6, ../../assets/scss/components/_icons.scss */
-.shape-man { fill: #55ACEE; }
+.shape-man { fill: #00428f; }
+
+/* line 1, ../../assets/scss/layout/_header.scss */
+.site-logo, .header-logo { display: block; background: url("../images/logo-allsalt.png") no-repeat; }
+
+/* line 6, ../../assets/scss/layout/_header.scss */
+.header { padding: 20px 0; }
+
+/* line 10, ../../assets/scss/layout/_header.scss */
+.header-logo { background-size: 90%; width: 200px; height: 85px; }
+
+/* line 17, ../../assets/scss/layout/_header.scss */
+.header-contacts { padding-top: 10px; text-align: right; }
+/* line 21, ../../assets/scss/layout/_header.scss */
+.header-contacts .phone { font-size: 30px; }
+/* line 25, ../../assets/scss/layout/_header.scss */
+.header-contacts .request-call { font-size: 18px; }
+
+/* line 1, ../../assets/scss/containers/_sections.scss */
+.section { background-size: cover; }
+
+/* line 5, ../../assets/scss/containers/_sections.scss */
+#section-0 { background: url("../images/bg-section-0.jpg"); background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

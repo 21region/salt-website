@@ -1,9 +1,10 @@
 //Website colors
 $color-white                  : #fff;
 $color-black                  : #000;
-$color-blue                   : #55ACEE;
+
+$color-blue                   : #00428f;
+$color-blue-dark              : #001f43;
 
 //Link colors
-//ordinary link
-//$color-link-base                    : $;
-//$color-link-base-hover              : $;
+$color-link-base                    : $color-blue;
+$color-link-base-hover              : $color-blue-dark;
