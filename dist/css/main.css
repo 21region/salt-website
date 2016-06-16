@@ -34,7 +34,7 @@
 /* line 39, ../../assets/scss/components/_buttons.scss */
 .btn-transparent { background: none; }
 /* line 42, ../../assets/scss/components/_buttons.scss */
-.btn-transparent:hover { background: #001f43; }
+.btn-transparent:hover { color: #001f43; }
 
 /* line 47, ../../assets/scss/components/_buttons.scss */
 .btn-lg { padding: 15px 30px; font-size: 24px; }
