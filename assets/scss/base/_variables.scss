@@ -1,16 +1,23 @@
 //Website colors
-$color-white                  : #fff;
-$color-black                  : #000;
-
 $color-gray                   : #adadad;
 $color-gray-light             : #f7f7f7;
+$color-gray-middle            : #bbb;
+$color-gray-dark              : #484d53;
 $color-blue                   : #00428f;
 $color-blue-dark              : #001f43;
 
+
 //Link colors
-$color-link-base                    : $color-blue;
-$color-link-base-hover              : $color-blue-dark;
+$color-link-base              : $color-blue;
+$color-link-base-hover        : $color-blue-dark;
+
 
 //Button colors
-$color-button-default               : $color-blue-dark;
-$color-button-default-hover         : $color-blue-dark;
+$color-button-default         : $color-blue-dark;
+$color-button-default-hover   : $color-blue-dark;
+
+
+//Fonts
+$font-base                    : 'Proxima';
+$color-text-heading           : $color-blue-dark;
+$color-text-small             : #6a727b;

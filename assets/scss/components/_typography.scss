@@ -1,41 +1,54 @@
-body {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 18px;
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Regular.otf');
   font-style: normal;
-  font-variant: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Proxima Bold';
+  src: url('../fonts/ProximaNova-Bold.otf');
+  font-style: normal;
+  font-weight: 800;
+}
+
+body {
+  font-family: 'Proxima';
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333;
 }
 
 h1 {
   font-size: 48px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  color: $color-blue-dark;
+  color: $color-text-heading;
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: 500;
-  color: $color-blue-dark;
+  font-size: 36px;
+  color: $color-text-heading;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 15.4px;
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
 }
 
 p {
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 20px;
+  line-height: 1.6;
 }
 
 a {
@@ -44,4 +57,9 @@ a {
   &:hover {
     color: $color-link-base-hover;
   }
+}
+
+.text-small {
+  color: $color-text-small;
+  line-height: 1.6;
 }
