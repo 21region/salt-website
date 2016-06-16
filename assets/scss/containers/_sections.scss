@@ -9,6 +9,24 @@
 #section-0 {
   background: url('../images/bg-section-0.jpg');
   background-size: cover;
+
+  .fp-tableCell {
+    vertical-align: top;
+  }
+}
+
+#section-1 {
+  background-size: cover;
+}
+
+#section-2 {
+  background: url('../images/bg-section-2.jpg');
+  background-size: cover;
+}
+
+#section-3 {
+  background: url('../images/bg-section-3.jpg');
+  background-size: cover;
 }
 
 .content {

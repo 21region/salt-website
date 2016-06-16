@@ -4,10 +4,12 @@
 	<meta charset="UTF-8">
 	<title>salt.ru</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="vendors/fullpage.js/jquery.fullpage.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+	<!-- fixed header -->
 	<header class="header-fixed">
 		<div class="container">
 			<div class="header-logo pull-left"></div>
@@ -21,7 +23,8 @@
 			</div>
 		</div>
 	</header>
-	<div class="wrapper">
+	<!-- end fixed header -->
+
 	<main id="fullpage" role="main">
 		<div id="section-0" class="section">
 			<div class="container">
@@ -47,7 +50,7 @@
 		</div>
 
 		<div id="section-1" class="section">
-			<div class="business container-fluid">
+			<div class="business container-fluid indent-top-vertical">
 				<div class="heading text-center">
 					<h1>Мы предлагаем</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Praesent pharetra felis sed vestibulum mattis. unc fringilla felis eu tortor posuere, at condimentum nisl molestie.</p>
@@ -84,7 +87,7 @@
 					</div>
 					<div class="col-md-6 removed-padding-left-right">
 						<figure class="effect-bubba">
-							<img class="img-responsive" src="dist/images/img-salt-1.jpg" alt="">
+							<img class="img-responsive" src="dist/images/img-salt-2.jpg" alt="">
 							<figcaption>
 								<!--<h4>Tilling</h4>-->
 								<!--<p>In sit amet sapien eros Integer quibusdam et aut officiis debitis aut rerum in tincidunt labore et dolore magna aliqua</p>-->
@@ -95,7 +98,7 @@
 				<section class="row">
 					<div class="col-md-6 removed-padding-left-right">
 						<figure class="effect-bubba">
-							<img class="img-responsive" src="dist/images/img-salt-1.jpg" alt="">
+							<img class="img-responsive" src="dist/images/img-salt-3.jpg" alt="">
 							<figcaption>
 								<!--<h4>Tilling</h4>-->
 								<!--<p>In sit amet sapien eros Integer quibusdam et aut officiis debitis aut rerum in tincidunt labore et dolore magna aliqua</p>-->
@@ -115,15 +118,28 @@
 			</div>
 		</div>
 
-		<div class="section">Some section 3</div>
-		<div class="section">Some section 4</div>
+		<div id="section-2" class="section">
+			<div class="container indent-top-vertical">Some section 3</div>
+		</div>
+		<div id="section-3" class="section">
+			<div class="container indent-top-vertical">Some section 4</div>
+		</div>
+
+		<div id="section-last" class="section footer fp-auto-height">
+			<div class="container-fluid">
+				<h1>footer</h1>
+				<p>footer</p>
+				<p>footer</p>
+				<p>footer</p>
+				<p>footer</p>
+			</div>
+		</div>
 	</main>
-	</div>
+
 	<script src="vendors/jquery/dist/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	<script src="vendors/fullpage.js/vendors/scrolloverflow.min.js"></script>
 	<script src="vendors/fullpage.js/dist/jquery.fullpage.min.js"></script>
-
 	<script>
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -131,11 +147,9 @@
 				onLeave: function(index, nextIndex, direction){
 					if(nextIndex != 1){
 						$('.header-fixed').addClass('show-header');
-						$('.wrapper').css('padding-top','70px');
 					}
 					else {
 						$('.header-fixed').removeClass('show-header');
-						$('.wrapper').css('padding-top','0');
 					}
 				}
 			});

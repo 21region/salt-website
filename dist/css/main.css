@@ -7,6 +7,12 @@
 /* line 9, ../../assets/scss/base/_base.scss */
 .removed-padding-left-right { padding-left: 0; padding-right: 0; }
 
+/* line 14, ../../assets/scss/base/_base.scss */
+.indent-top-vertical { padding-top: 70px; }
+
+/* line 1, ../../assets/scss/base/_columns.scss */
+.container-fluid { max-width: 2000px; }
+
 /* line 1, ../../assets/scss/components/_buttons.scss */
 .btn { border-radius: 0; transition: .3s; }
 
@@ -79,24 +85,35 @@ a:hover { color: #001f43; }
 
 /* line 9, ../../assets/scss/containers/_sections.scss */
 #section-0 { background: url("../images/bg-section-0.jpg"); background-size: cover; }
+/* line 13, ../../assets/scss/containers/_sections.scss */
+#section-0 .fp-tableCell { vertical-align: top; }
 
-/* line 15, ../../assets/scss/containers/_sections.scss */
+/* line 18, ../../assets/scss/containers/_sections.scss */
+#section-1 { background-size: cover; }
+
+/* line 22, ../../assets/scss/containers/_sections.scss */
+#section-2 { background: url("../images/bg-section-2.jpg"); background-size: cover; }
+
+/* line 27, ../../assets/scss/containers/_sections.scss */
+#section-3 { background: url("../images/bg-section-3.jpg"); background-size: cover; }
+
+/* line 33, ../../assets/scss/containers/_sections.scss */
 .content h1 { padding-top: 3em; padding-bottom: 4em; }
 
-/* line 21, ../../assets/scss/containers/_sections.scss */
+/* line 39, ../../assets/scss/containers/_sections.scss */
 .advantages { width: 330px; position: absolute; left: 50%; margin-left: -165px; bottom: 5em; }
-/* line 28, ../../assets/scss/containers/_sections.scss */
+/* line 46, ../../assets/scss/containers/_sections.scss */
 .advantages li { position: relative; padding-left: 35px; padding-bottom: 10px; color: #001f43; }
-/* line 34, ../../assets/scss/containers/_sections.scss */
+/* line 52, ../../assets/scss/containers/_sections.scss */
 .advantages li::before { content: ''; display: block; position: absolute; left: 0; }
 
-/* line 48, ../../assets/scss/containers/_sections.scss */
+/* line 66, ../../assets/scss/containers/_sections.scss */
 .business .row { background: #f7f7f7; }
-/* line 52, ../../assets/scss/containers/_sections.scss */
+/* line 70, ../../assets/scss/containers/_sections.scss */
 .business .heading { margin-top: 120px; margin-bottom: 120px; }
-/* line 56, ../../assets/scss/containers/_sections.scss */
+/* line 74, ../../assets/scss/containers/_sections.scss */
 .business .heading h1 { margin-bottom: 40px; }
-/* line 61, ../../assets/scss/containers/_sections.scss */
+/* line 79, ../../assets/scss/containers/_sections.scss */
 .business .business-information { padding: 50px 60px 0 60px; }
 
 /*# sourceMappingURL=main.css.map */
