@@ -14,20 +14,33 @@
 .container-fluid { max-width: 2000px; }
 
 /* line 1, ../../assets/scss/components/_buttons.scss */
-.btn { border-radius: 0; transition: .3s; }
+.btn { border-radius: 0; border: 1px solid; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-/* line 6, ../../assets/scss/components/_buttons.scss */
-.btn-default { background: #001f43; color: white; }
-/* line 10, ../../assets/scss/components/_buttons.scss */
-.btn-default:hover { background: none; }
+/* line 7, ../../assets/scss/components/_buttons.scss */
+.btn-default { background: #001f43; color: white; border: 1px solid transparent; }
+/* line 12, ../../assets/scss/components/_buttons.scss */
+.btn-default:hover { background: none; color: #001f43; border-color: #001f43; }
 
-/* line 15, ../../assets/scss/components/_buttons.scss */
-.btn-additional { background: none; color: black; border: 1px solid #adadad; }
-/* line 20, ../../assets/scss/components/_buttons.scss */
-.btn-additional:hover { background: #001f43; border-color: #001f43; color: white; }
+/* line 19, ../../assets/scss/components/_buttons.scss */
+.btn-additional { background: none; color: #001f43; border-color: #001f43; }
+/* line 24, ../../assets/scss/components/_buttons.scss */
+.btn-additional:hover { background: #001f43; color: white; }
 
-/* line 27, ../../assets/scss/components/_buttons.scss */
+/* line 30, ../../assets/scss/components/_buttons.scss */
+.btn-noborder { border-color: transparent; }
+/* line 33, ../../assets/scss/components/_buttons.scss */
+.btn-noborder:hover { background: none; border-color: #001f43; }
+
+/* line 39, ../../assets/scss/components/_buttons.scss */
+.btn-transparent { background: none; }
+/* line 42, ../../assets/scss/components/_buttons.scss */
+.btn-transparent:hover { background: #001f43; }
+
+/* line 47, ../../assets/scss/components/_buttons.scss */
 .btn-lg { padding: 15px 30px; font-size: 24px; }
+
+/* line 52, ../../assets/scss/components/_buttons.scss */
+.btn-request-call { width: auto; margin-top: -3px; padding: 7px 20px; }
 
 @font-face { font-family: 'Proxima'; src: url("../fonts/ProximaNova-Regular.otf"); font-style: normal; font-weight: 300; }
 @font-face { font-family: 'Proxima Bold'; src: url("../fonts/ProximaNova-Bold.otf"); font-style: normal; font-weight: 800; }
@@ -35,32 +48,35 @@
 body { font-family: 'Proxima'; font-size: 18px; line-height: 1.4; color: #333; }
 
 /* line 22, ../../assets/scss/components/_typography.scss */
-h1 { font-size: 48px; color: #001f43; }
+html { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 /* line 27, ../../assets/scss/components/_typography.scss */
+h1 { font-size: 48px; color: #001f43; }
+
+/* line 32, ../../assets/scss/components/_typography.scss */
 h2 { font-size: 36px; color: #001f43; margin-bottom: 20px; }
 
-/* line 33, ../../assets/scss/components/_typography.scss */
+/* line 38, ../../assets/scss/components/_typography.scss */
 h3 { font-size: 30px; }
 
-/* line 37, ../../assets/scss/components/_typography.scss */
+/* line 42, ../../assets/scss/components/_typography.scss */
 h4 { font-size: 24px; margin-bottom: 20px; }
 
-/* line 42, ../../assets/scss/components/_typography.scss */
+/* line 47, ../../assets/scss/components/_typography.scss */
 h5 { font-size: 20px; }
 
-/* line 46, ../../assets/scss/components/_typography.scss */
+/* line 51, ../../assets/scss/components/_typography.scss */
 h6 { font-size: 18px; }
 
-/* line 50, ../../assets/scss/components/_typography.scss */
+/* line 55, ../../assets/scss/components/_typography.scss */
 p { line-height: 1.6; }
 
-/* line 54, ../../assets/scss/components/_typography.scss */
+/* line 59, ../../assets/scss/components/_typography.scss */
 a { color: #00428f; }
-/* line 57, ../../assets/scss/components/_typography.scss */
+/* line 62, ../../assets/scss/components/_typography.scss */
 a:hover { color: #001f43; }
 
-/* line 62, ../../assets/scss/components/_typography.scss */
+/* line 67, ../../assets/scss/components/_typography.scss */
 .text-small { color: #6a727b; line-height: 1.6; }
 
 /* line 1, ../../assets/scss/components/_icons.scss */
@@ -82,9 +98,9 @@ a:hover { color: #001f43; }
 .header-logo { background-size: 90%; width: 200px; height: 85px; }
 
 /* line 17, ../../assets/scss/layout/_header.scss */
-.header-contacts { padding-top: 10px; text-align: right; }
-/* line 21, ../../assets/scss/layout/_header.scss */
-.header-contacts .phone { font-size: 30px; color: #001f43; }
+.header-contacts { text-align: right; }
+/* line 20, ../../assets/scss/layout/_header.scss */
+.header-contacts .phone { font-size: 30px; color: #001f43; margin-bottom: 10px; }
 /* line 26, ../../assets/scss/layout/_header.scss */
 .header-contacts .request-call { font-size: 18px; }
 
@@ -94,27 +110,23 @@ a:hover { color: #001f43; }
 .header-fixed.show-header { height: 70px; }
 /* line 47, ../../assets/scss/layout/_header.scss */
 .header-fixed .header-logo { width: 200px; height: 60px; margin-top: 4px; background-size: 65%; }
-/* line 54, ../../assets/scss/layout/_header.scss */
-.header-fixed .header-contacts { padding-top: 0; }
-/* line 57, ../../assets/scss/layout/_header.scss */
-.header-fixed .header-contacts .phone { font-size: 24px; line-height: 67px; }
+/* line 56, ../../assets/scss/layout/_header.scss */
+.header-fixed .header-contacts .phone { margin-left: 10px; margin-bottom: 0; font-size: 24px; line-height: 70px; }
 
-/* line 64, ../../assets/scss/layout/_header.scss */
+/* line 65, ../../assets/scss/layout/_header.scss */
 .navbar-default { height: 100%; background: none; border: 0; border-radius: 0; }
-/* line 72, ../../assets/scss/layout/_header.scss */
+/* line 73, ../../assets/scss/layout/_header.scss */
 .navbar-default .main-nav li { margin-left: 40px; }
-/* line 75, ../../assets/scss/layout/_header.scss */
+/* line 76, ../../assets/scss/layout/_header.scss */
 .navbar-default .main-nav li a { background: none; padding-top: 22px; padding-bottom: 22px; color: #bbb; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
-/* line 82, ../../assets/scss/layout/_header.scss */
+/* line 83, ../../assets/scss/layout/_header.scss */
 .navbar-default .main-nav li a::after { content: ''; position: relative; display: block; width: 0; height: 3px; margin: 0 auto; margin-top: 3px; background: #001f43; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
-/* line 98, ../../assets/scss/layout/_header.scss */
+/* line 99, ../../assets/scss/layout/_header.scss */
 .navbar-default .main-nav li.active a, .navbar-default .main-nav li:focus a, .navbar-default .main-nav li:hover a { background: none; color: #484d53; }
-/* line 102, ../../assets/scss/layout/_header.scss */
+/* line 103, ../../assets/scss/layout/_header.scss */
 .navbar-default .main-nav li.active a::after, .navbar-default .main-nav li:focus a::after, .navbar-default .main-nav li:hover a::after { width: 100%; }
-/* line 109, ../../assets/scss/layout/_header.scss */
+/* line 110, ../../assets/scss/layout/_header.scss */
 .navbar-default .main-nav li.active a:hover { background: none; color: #484d53; }
-/* line 115, ../../assets/scss/layout/_header.scss */
-.navbar-default .main-nav li:last-child { margin-left: 0; }
 
 /* line 1, ../../assets/scss/containers/_sections.scss */
 .section { position: relative; display: table; width: 100%; table-layout: fixed; background-size: cover; }
