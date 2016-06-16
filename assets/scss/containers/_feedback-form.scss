@@ -1,0 +1,22 @@
+.feedback-form-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  right: 20px;
+  height: 100%;
+  background: white;
+}
+
+.feedback-form {
+  display: table-cell;
+  vertical-align: middle;
+
+  .heading {
+    margin-bottom: 60px;
+  }
+
+  label {
+    font-weight: normal;
+  }
+}

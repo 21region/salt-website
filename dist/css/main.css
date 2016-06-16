@@ -25,20 +25,23 @@
 .btn-lg { padding: 15px 30px; font-size: 24px; }
 
 /* line 1, ../../assets/scss/components/_typography.scss */
-body { font-family: Verdana, Geneva, sans-serif; font-size: 18px; }
+body { font-family: Verdana, Geneva, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; }
 
-/* line 6, ../../assets/scss/components/_typography.scss */
-h1 { font-size: 48px; font-style: normal; font-variant: normal; font-weight: 500; text-transform: uppercase; letter-spacing: -2px; color: #001f43; }
+/* line 8, ../../assets/scss/components/_typography.scss */
+h1 { font-size: 48px; font-style: normal; font-variant: normal; font-weight: 500; text-transform: uppercase; letter-spacing: -1px; color: #001f43; }
 
-/* line 16, ../../assets/scss/components/_typography.scss */
+/* line 18, ../../assets/scss/components/_typography.scss */
+h2 { font-size: 30px; font-weight: 500; color: #001f43; margin-bottom: 20px; }
+
+/* line 25, ../../assets/scss/components/_typography.scss */
 h3 { font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 15.4px; }
 
-/* line 24, ../../assets/scss/components/_typography.scss */
+/* line 33, ../../assets/scss/components/_typography.scss */
 p { font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; }
 
-/* line 32, ../../assets/scss/components/_typography.scss */
+/* line 41, ../../assets/scss/components/_typography.scss */
 a { color: #00428f; }
-/* line 35, ../../assets/scss/components/_typography.scss */
+/* line 44, ../../assets/scss/components/_typography.scss */
 a:hover { color: #001f43; }
 
 /* line 1, ../../assets/scss/components/_icons.scss */
@@ -128,5 +131,15 @@ a:hover { color: #001f43; }
 .products .product-item .button-product { position: absolute; bottom: 0; left: 0; width: 100%; height: 45px; background: #001f43; border: 0; color: white; transition: .3s; }
 /* line 30, ../../assets/scss/containers/_products.scss */
 .products .product-item .button-product:hover { background: none; color: #001f43; }
+
+/* line 1, ../../assets/scss/containers/_feedback-form.scss */
+.feedback-form-wrapper { position: absolute; top: 0; left: 0; display: table; right: 20px; height: 100%; background: white; }
+
+/* line 11, ../../assets/scss/containers/_feedback-form.scss */
+.feedback-form { display: table-cell; vertical-align: middle; }
+/* line 15, ../../assets/scss/containers/_feedback-form.scss */
+.feedback-form .heading { margin-bottom: 60px; }
+/* line 19, ../../assets/scss/containers/_feedback-form.scss */
+.feedback-form label { font-weight: normal; }
 
 /*# sourceMappingURL=main.css.map */
