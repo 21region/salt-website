@@ -12,6 +12,18 @@
   }
 }
 
+.btn-additional {
+  background: none;
+  color: black;
+  border: 1px solid $color-gray;
+
+  &:hover {
+    background: $color-blue-dark;
+    border-color: $color-blue-dark;
+    color: white;
+  }
+}
+
 .btn-lg {
   padding: 15px 30px;
   font-size: 24px;
